@@ -4,15 +4,14 @@ import lombok.val;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 
 /**
  * * @Author: cuixin
  * * @Date: 2019/7/8 13:25
  */
-public class ValExample {
+public class WithLombok {
     public static void main(String args[]){
-        ValExample valExample = new ValExample();
+        WithLombok valExample = new WithLombok();
         valExample.example();
         valExample.example2();
     }

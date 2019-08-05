@@ -9,9 +9,9 @@ import java.util.Map;
  * * @Author: cuixin
  * * @Date: 2019/7/8 13:31
  */
-public class OriginalJava {
+public class VanillaJava {
     public static void main(String[] args) {
-        OriginalJava valExample = new OriginalJava();
+        VanillaJava valExample = new VanillaJava();
         valExample.example();
         valExample.example2();
     }
