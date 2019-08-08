@@ -6,7 +6,7 @@ import java.util.Arrays;
  * * @Author: cuixin
  * * @Date: 2019/7/8 17:28
  */
-public class EqualsAndHashCodeWithoutLombok {
+public class VanillaJava {
     private transient int transientVar = 10;
     private String name;
     private double score;
@@ -20,8 +20,8 @@ public class EqualsAndHashCodeWithoutLombok {
 
     @Override public boolean equals(Object o) {
         if (o == this) return true;
-        if (!(o instanceof EqualsAndHashCodeWithoutLombok)) return false;
-        EqualsAndHashCodeWithoutLombok other = (EqualsAndHashCodeWithoutLombok) o;
+        if (!(o instanceof VanillaJava)) return false;
+        VanillaJava other = (VanillaJava) o;
         if (!other.canEqual((Object)this)) return false;
         if (this.getName() == null ? other.getName() != null : !this.getName().equals(other.getName())) return false;
         if (Double.compare(this.score, other.score) != 0) return false;
@@ -40,7 +40,7 @@ public class EqualsAndHashCodeWithoutLombok {
     }
 
     protected boolean canEqual(Object other) {
-        return other instanceof EqualsAndHashCodeWithoutLombok;
+        return other instanceof VanillaJava;
     }
 
     public static class Square extends Shape {
@@ -83,18 +83,18 @@ public class EqualsAndHashCodeWithoutLombok {
     }
 
     public static void main(String args[]){
-        EqualsAndHashCodeWithoutLombok example = new EqualsAndHashCodeWithoutLombok();
+        VanillaJava example = new VanillaJava();
         example.name = "YellowStar5";
         example.score = 50;
         example.id = 111;
-        example.shape = new EqualsAndHashCodeWithoutLombok.Square(3, 4);
+        example.shape = new VanillaJava.Square(3, 4);
 
 
-        EqualsAndHashCodeWithoutLombok example1 = new EqualsAndHashCodeWithoutLombok();
+        VanillaJava example1 = new VanillaJava();
         example1.name = "YellowStar5";
         example1.score = 50;
         example1.id = 112;
-        example1.shape = new EqualsAndHashCodeWithoutLombok.Square(4, 5);
+        example1.shape = new VanillaJava.Square(4, 5);
 
         System.out.println(example.equals(example1));
 

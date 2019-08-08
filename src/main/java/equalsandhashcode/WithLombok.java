@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
  * * @Date: 2019/7/8 17:22
  */
 @EqualsAndHashCode
-public class EqualsAndHashCodeWithLombok {
+public class WithLombok {
     private transient int transientVar = 10;
     private String name;
     private double score;
@@ -33,14 +33,14 @@ public class EqualsAndHashCodeWithLombok {
     }
 
     public static void main(String args[]){
-        EqualsAndHashCodeWithLombok example = new EqualsAndHashCodeWithLombok();
+        WithLombok example = new WithLombok();
         example.name = "YellowStar5";
         example.score = 50;
         example.id = 111;
         example.shape = new Square(3, 4);
 
 
-        EqualsAndHashCodeWithLombok example1 = new EqualsAndHashCodeWithLombok();
+        WithLombok example1 = new WithLombok();
         example1.name = "YellowStar5";
         example1.score = 50;
         example1.id = 112;
