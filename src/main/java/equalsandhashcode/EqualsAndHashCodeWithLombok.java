@@ -1,7 +1,6 @@
 package equalsandhashcode;
 
 import lombok.EqualsAndHashCode;
-import tostring.ToStringWithLombok;
 
 /**
  * * @Author: cuixin
