@@ -8,7 +8,7 @@ import lombok.*;
  */
 @RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
-public class ConstructorExample<T>{
+public class WithLombok<T>{
     private int x,y;
     @NonNull
     private T description;
@@ -20,7 +20,7 @@ public class ConstructorExample<T>{
 
     @Override
     public String toString() {
-        return "ConstructorExample{" +
+        return "WithLombok{" +
                 "x=" + x +
                 ", y=" + y +
                 ", description=" + description +
@@ -28,10 +28,10 @@ public class ConstructorExample<T>{
     }
 
     public static void main(String args[]){
-        ConstructorExample<String> constructorExample = ConstructorExample.of("description") ;
-        System.out.println(constructorExample);
+        WithLombok<String> withLombok = WithLombok.of("description") ;
+        System.out.println(withLombok);
 
-        ConstructorExample<String> constructorExample1 = new ConstructorExample<String>(2, 3, "description");
-        System.out.println(constructorExample1);
+        WithLombok<String> withLombok1 = new WithLombok<String>(2, 3, "description");
+        System.out.println(withLombok1);
     }
 }

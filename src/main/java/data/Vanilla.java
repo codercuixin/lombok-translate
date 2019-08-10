@@ -7,13 +7,13 @@ package data;
 
 import java.util.Arrays;
 
-public class DataExample2 {
+public class Vanilla {
     private final String name;
     private int age;
     private double score;
     private String[] tags;
 
-    public DataExample2(String name) {
+    public Vanilla(String name) {
         this.name = name;
     }
 
@@ -47,18 +47,18 @@ public class DataExample2 {
 
     @Override
     public String toString() {
-        return "DataExample2(" + this.getName() + ", " + this.getAge() + ", " + this.getScore() + ", " + Arrays.deepToString(this.getTags()) + ")";
+        return "Vanilla(" + this.getName() + ", " + this.getAge() + ", " + this.getScore() + ", " + Arrays.deepToString(this.getTags()) + ")";
     }
 
     protected boolean canEqual(Object other) {
-        return other instanceof DataExample2;
+        return other instanceof Vanilla;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == this) return true;
-        if (!(o instanceof DataExample2)) return false;
-        DataExample2 other = (DataExample2) o;
+        if (!(o instanceof Vanilla)) return false;
+        Vanilla other = (Vanilla) o;
         if (!other.canEqual(this)) return false;
         if (this.getName() == null ? other.getName() != null : !this.getName().equals(other.getName())) return false;
         if (this.getAge() != other.getAge()) return false;

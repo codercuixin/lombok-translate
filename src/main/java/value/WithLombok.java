@@ -11,7 +11,7 @@ import lombok.experimental.Wither;
  * * @Date: 2019/7/12 18:18
  */
 @Value
-public class ValueExample {
+public class WithLombok {
     String name;
     @Wither(AccessLevel.PACKAGE)
     @NonFinal
@@ -27,7 +27,7 @@ public class ValueExample {
     }
 
     public static void main(String args[]){
-        ValueExample example = new ValueExample("Jack", 20, 100, new String[]{"Yellow"});
+        WithLombok example = new WithLombok("Jack", 20, 100, new String[]{"Yellow"});
         System.out.println(example);
         Exercise exercise = Exercise.of("hello", "word");
         System.out.println(exercise);

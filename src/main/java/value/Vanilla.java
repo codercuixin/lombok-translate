@@ -2,14 +2,14 @@ package value;
 
 import java.util.Arrays;
 
-public final class ValueExample2 {
+public final class Vanilla {
   private final String name;
   private int age;
   private final double score;
   protected final String[] tags;
   
   @java.beans.ConstructorProperties({"name", "age", "score", "tags"})
-  public ValueExample2(String name, int age, double score, String[] tags) {
+  public Vanilla(String name, int age, double score, String[] tags) {
     this.name = name;
     this.age = age;
     this.score = score;
@@ -35,8 +35,8 @@ public final class ValueExample2 {
   @java.lang.Override
   public boolean equals(Object o) {
     if (o == this) return true;
-    if (!(o instanceof ValueExample2)) return false;
-    final ValueExample2 other = (ValueExample2)o;
+    if (!(o instanceof Vanilla)) return false;
+    final Vanilla other = (Vanilla)o;
     final Object this$name = this.getName();
     final Object other$name = other.getName();
     if (this$name == null ? other$name != null : !this$name.equals(other$name)) return false;
@@ -61,11 +61,11 @@ public final class ValueExample2 {
   
   @java.lang.Override
   public String toString() {
-    return "ValueExample(name=" + getName() + ", age=" + getAge() + ", score=" + getScore() + ", tags=" + Arrays.deepToString(getTags()) + ")";
+    return "WithLombok(name=" + getName() + ", age=" + getAge() + ", score=" + getScore() + ", tags=" + Arrays.deepToString(getTags()) + ")";
   }
   
-  ValueExample2 withAge(int age) {
-    return this.age == age ? this : new ValueExample2(name, age, score, tags);
+  Vanilla withAge(int age) {
+    return this.age == age ? this : new Vanilla(name, age, score, tags);
   }
   
   public static final class Exercise<T> {
@@ -92,7 +92,7 @@ public final class ValueExample2 {
     @java.lang.Override
     public boolean equals(Object o) {
       if (o == this) return true;
-      if (!(o instanceof ValueExample2.Exercise)) return false;
+      if (!(o instanceof Vanilla.Exercise)) return false;
       final Exercise<?> other = (Exercise<?>)o;
       final Object this$name = this.getName();
       final Object other$name = other.getName();
@@ -116,7 +116,7 @@ public final class ValueExample2 {
     
     @java.lang.Override
     public String toString() {
-      return "ValueExample.Exercise(name=" + getName() + ", value=" + getValue() + ")";
+      return "WithLombok.Exercise(name=" + getName() + ", value=" + getValue() + ")";
     }
   }
 }
