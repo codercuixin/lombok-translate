@@ -19,8 +19,7 @@
 ```
 
 ## IntelliJ IDEA 中 安装lombok插件。
-其他集成开发环境（比如 Visual Studio Code, Eclipse), 请参见[官方文档]([https://projectlombok.org/](https://projectlombok.org/)
-) Install部分。
+其他集成开发环境（比如 Visual Studio Code, Eclipse), 请参见[官方文档](https://projectlombok.org/) Install部分。
 ![install-lombok-plugin.png](https://upload-images.jianshu.io/upload_images/4148467-a134df7e6f1a3746.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##  下面主要是对[lombok features](https://www.projectlombok.org/features/all)部分的翻译
