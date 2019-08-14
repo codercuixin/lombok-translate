@@ -1,5 +1,29 @@
 # lombok-translate
-下面主要是对[lombok features](https://www.projectlombok.org/features/all)部分的翻译
+## 为什么要使用lombok。
+- 普通的 POJO 需要写或是用IDEA等集成开发环境生成大量gettter, setter方法
+- 普通的 POJO 对于 equals 和 hashCode 等方法，也需要自己维护。特别你写接口的时候，如果添加了
+一个字段忘了维护，可能会导致一些bug。
+- 普通的 POJO 没有 builder 的支持，得自己实现该模式。
+- ....
+
+总之，lombok 极大地简化你的代码，去掉了那些模板代码，让你的POJO看起来更加地清爽（可以只有类名和字段的声明，加上少量的注解）。
+
+## jar 包的下载
+```
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.8</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+## IntelliJ IDEA 中 安装lombok插件。
+其他集成开发环境（比如 Visual Studio Code, Eclipse), 请参见[官方文档]([https://projectlombok.org/](https://projectlombok.org/)
+) Install部分。
+![install-lombok-plugin.png](https://upload-images.jianshu.io/upload_images/4148467-a134df7e6f1a3746.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+##  下面主要是对[lombok features](https://www.projectlombok.org/features/all)部分的翻译
 
 > [val](https://github.com/codercuixin/lombok-translate/wiki/val)
 
